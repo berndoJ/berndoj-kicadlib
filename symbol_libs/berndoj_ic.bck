@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TAS5613ADKDR
+D IC Audio Amplifier Class D Stereo/BTL 300W 44HSSOP
+$ENDCMP
+#
+$CMP TAS5613APHDR
+D IC Audio Amplifier Class D Stereo/BTL 300W 64-HTQFP
+$ENDCMP
+#
+#End Doc Library
