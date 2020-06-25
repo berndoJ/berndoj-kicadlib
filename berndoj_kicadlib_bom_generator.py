@@ -51,10 +51,24 @@ writerow( out, ['Source:', net.getSource()] )
 writerow( out, ['Date:', net.getDate()] )
 writerow( out, ['Tool:', net.getTool()] )
 writerow( out, ['Component Count:', len(components)] )
-writerow( out, ['Ref', 'Value', 'Footprint', 'Datasheet', 'IPN', 'PN_DigiKey'] )
+writerow( out, ['IPN', 'Value', 'Count'] )
+
+grouped_rows = {}
+part_count = {}
+
+for c in components:
+    cur_ipn = c.getField("IPN")
+    if not (cur_ipn in grouped_rows):
+        grouped_rows[cur_ipn] = [c.getField("IPN"), c.getValue()]
+        part_count[cur_ipn] = 1
+    else:
+        part_count[cur_ipn] += 1
 
 # Output all of the component information (One component per row)
-for c in components:
-    writerow( out, [c.getRef(), c.getValue(), c.getFootprint(), c.getDatasheet(),
-        c.getField("IPN"), c.getField("PN_DigiKey")])
+#for c in components:
+#    writerow( out, [c.getRef(), c.getValue(), c.getFootprint(), c.getDatasheet(),
+#        c.getField("IPN"), c.getField("PN_DigiKey")])
 
+for row_key in grouped_rows:
+    grouped_rows[row_key].append(part_count[row_key])
+    writerow(out, grouped_rows[row_key])
