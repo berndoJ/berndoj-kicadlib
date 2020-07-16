@@ -1,0 +1,5 @@
+The following KiCad file paths are needed in order to use berndoj-kicadlib:
+
+- ${BERNDOJ_KICADLIB} = Root path to the git repository.
+- ${BERNDOJ_3DMODELS} = Path to the 3dmodels subdirectory of the git repository.
+
