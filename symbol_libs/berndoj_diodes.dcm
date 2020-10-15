@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BAT54-7-F
+D DIODE SCHOTTKY 30V 200mA 800mV@100mA SMD SOT-23-3
+$ENDCMP
+#
+#End Doc Library

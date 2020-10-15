@@ -1,0 +1,35 @@
+QFN-72-1EP_10x10_P0.5mm_EP4.7x4.7mm:
+        description: "72-Lead QFN; Drawings from SiliconLabs;"
+        device_type: "QFN"
+        size_source: "https://datasheet.lcsc.com/szlcsc/1912111437_Lattice-SII9022ACNU_C369565.pdf"
+        body_size_x: 10.0
+        body_size_y: 10.0
+        EP_size_x: 4.7
+        EP_size_y: 4.7
+        pitch: 0.5
+        lead_len: 0.4
+        lead_width: 0.23
+        overall_height: 0.85
+        num_pins_x: 18
+        num_pins_y: 18
+        EP_size_x_overwrite: 4.9
+        EP_size_y_overwrite: 4.9
+        EP_num_paste_pads: [2, 2]
+
+QFN-56-1EP_7x7_P0.4mm_EP4.6x4.6mm:
+        description: "56-Lead QFN; Drawings from Microchip;"
+        device_type: "QFN"
+        size_source: "https://ww1.microchip.com/downloads/en/DeviceDoc/USB5744-Data-Sheet-DS00001855J.pdf"
+        body_size_x: 7.0
+        body_size_y: 7.0
+        EP_size_x: 4.6
+        EP_size_y: 4.6
+        pitch: 0.4
+        lead_len: 0.4
+        lead_width: 0.2
+        overall_height: 0.9
+        num_pins_x: 14
+        num_pins_y: 14
+        EP_size_x_overwrite: 4.8
+        EP_size_y_overwrite: 4.8
+        EP_num_paste_pads: [2, 2] 
